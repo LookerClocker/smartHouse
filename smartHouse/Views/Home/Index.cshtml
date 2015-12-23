@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<script src="~/Scripts/jquery-2.1.4.js"></script>
+<script src="~/Scripts/timeOnClock.js"></script>
+<script src="~/Scripts/dayTimes.js"></script>
+<script src="~/Scripts/smoothie.js"></script>
+<script src="~/Scripts/simpleChart.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+
+<div class="container-fluid no-container-pading">
+    <div class="row">
+        <div class="col-md-12 no-container-pading">
+            <div id="bodyClock">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 no-container-pading zero-height">
+            <ul id="clock" class="clock-position">
+                <li id="sec"></li>
+                <li id="hour"></li>
+                <li id="min"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container-fluid gradient-background gradient-row-position">
+    <div class="row">
+        <div class="col-md-3 text-center">
+            <div class="img-position">
+                <img class="img-circle" src="~/Images/Family/family.jpg" alt="family" />
+                <h2>The Seyfrieds</h2>
+            </div>
+            <div class="right-border"></div>
+        </div>
+        <div class="col-md-3 text-center range-line-position">
+            <div>
+                <input class="pull-right green-range" type="range" id="rangeinput" value="50" onchange="rangevalue.value = value" />
+                <output id="rangevalue">50</output>
+            </div>
+            <div>
+                <input class="bar2 red-range pull-right" type="range" id="rangeinputClimate" value="50" onchange="rangevalueClimate.value = value" />
+                <output id="rangevalueClimate">50</output>
+            </div>
+        </div>
+        <div class="col-md-3 graf-part-position">
+            <canvas id="temperature" class="pull-right"></canvas>
+        </div>
+        <div class="col-md-3 graf-part-position">
+            <canvas id="light" class="pull-right"></canvas>
+        </div>
+        <div class="col-md-12 text-center p-b-15">
+            <div class="button-div-position">
+                <button type="button" class="btn btn-default btn-circle btn-xl white-button"></button>
+                <button type="button" class="btn btn-primary btn-circle btn-xl darkblue-button"></button>
+                <button type="button" class="btn btn-danger btn-circle btn-lg red-button"></button>
+                <button type="button" class="btn btn-info btn-circle btn-xl lightblue-button"></button>
+                <button type="button" class="btn btn-warning btn-circle btn-lg orangeUP-button"></button>
+                <button type="button" class="btn btn-success btn-circle btn-xl green-button"></button>         
+                <button type="button" class="btn btn-warning btn-circle btn-lg orangeDown-button"></button>
+                <button type="button" class="btn btn-danger btn-circle btn-lg upRed-button"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
