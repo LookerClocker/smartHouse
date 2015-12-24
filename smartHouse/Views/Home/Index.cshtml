@@ -8,6 +8,9 @@
 <script src="~/Scripts/smoothie.js"></script>
 <script src="~/Scripts/simpleChart.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.0/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="~/Scripts/kettle.js"></script>
+<link type="text/css" href="http://csshake.surge.sh/csshake.min.css">
 
 <div class="container-fluid no-container-pading">
     <div class="row">
@@ -30,42 +33,76 @@
     <div class="row">
         <div class="col-md-3 text-center">
             <div class="img-position">
-                <img class="img-circle" src="~/Images/Family/family.jpg" alt="family" />
+                <img class="img-circle" src="~/Images/Family/family.jpg" alt="family"/>
                 <h2>The Seyfrieds</h2>
             </div>
             <div class="right-border"></div>
         </div>
-        <div class="col-md-3 text-center range-line-position">
-            <div>
-                <input class="pull-right green-range" type="range" id="rangeinput" value="50" onchange="rangevalue.value = value" />
+        <div class="col-md-4 col-md-offset-1 text-center range-line-position">
+            <h2 class="title-first-row">Climate control</h2>
+
+                <input class="green-range center-line" type="range" id="rangeinput" value="50" onchange="rangevalue.value = value"/>
                 <output id="rangevalue">50</output>
+
+            <div class="graf-part-position pull-left">
+                <canvas id="temperature"></canvas>
             </div>
-            <div>
-                <input class="bar2 red-range pull-right" type="range" id="rangeinputClimate" value="50" onchange="rangevalueClimate.value = value" />
+        </div>
+        <div class="col-md-4 text-center range-line-position">
+            <h2 class="title-first-row">Light</h2>
+
+                <input class="red-range center-line" type="range" id="rangeinputClimate" value="50" onchange="rangevalueClimate.value = value"/>
                 <output id="rangevalueClimate">50</output>
+
+            <div class="graf-part-position pull-left">
+                <canvas id="light"></canvas>
             </div>
         </div>
-        <div class="col-md-3 graf-part-position">
-            <canvas id="temperature" class="pull-right"></canvas>
-        </div>
-        <div class="col-md-3 graf-part-position">
-            <canvas id="light" class="pull-right"></canvas>
-        </div>
-        <div class="col-md-12 text-center p-b-15">
+        @*<div class="col-md-12 text-center p-b-15">
             <div class="button-div-position">
                 <button type="button" class="btn btn-default btn-circle btn-xl white-button"></button>
                 <button type="button" class="btn btn-primary btn-circle btn-xl darkblue-button"></button>
                 <button type="button" class="btn btn-danger btn-circle btn-lg red-button"></button>
                 <button type="button" class="btn btn-info btn-circle btn-xl lightblue-button"></button>
                 <button type="button" class="btn btn-warning btn-circle btn-lg orangeUP-button"></button>
-                <button type="button" class="btn btn-success btn-circle btn-xl green-button"></button>         
+                <button type="button" class="btn btn-success btn-circle btn-xl green-button"></button>
                 <button type="button" class="btn btn-warning btn-circle btn-lg orangeDown-button"></button>
                 <button type="button" class="btn btn-danger btn-circle btn-lg upRed-button"></button>
             </div>
-        </div>
+        </div>*@
     </div>
 </div>
+<div class="container-fluid gradient-background gradient-row-position">
+    <hr/>
+    <div class="row div-kettle">
+        <div class="col-md-6">
+            <div class="row text-center">
+                <div class="col-md-2">
+                    <p>
+                        <b>Set kettle:</b>
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <label class="toggle btn btn-primary" style="width: 58px; height: 34px;">
+                        <input id="toggle-event" type="checkbox" checked="checked">
+                        <div class="toggle-group">
+                            <div class="btn btn-primary toggle-on">On</div>
+                            <div class="btn btn-default active toggle-off">Off</div>
+                            <span class="toggle-handle btn btn-default"></span>
+                        </div>
+                    </label>
+                </div>
+                <div class="col-md-2">
+                    <div id="console-event">
+                        <img  class="kettle-img"src="~/Images/Kettle/k1.png"/>
+                    </div>
+                    <div id="console-event2">
+                        <img id="img" class="kettle-img" src="~/Images/Kettle/k2.jpg" />
+                    </div>
+                </div>
+            </div>
+   
+        </div>
 
-
-
-
+    </div>
+</div>

@@ -425,12 +425,12 @@ h2 {
 
 .graf-part-position {
     position: relative;
-    top: 65px;
+    top: -11px;
 }
 
 .range-line-position {
     position: relative;
-    top: 96px;
+    top: 53px;
 }
 
 /*circle-button*/
@@ -511,3 +511,59 @@ h2 {
     bottom: 38px;
     left: 13%;
 }
+
+
+.center-line {
+    position: relative;
+    left: 2%;
+}
+
+
+    .title-first-row {
+    position: relative;
+    bottom: 40px;
+    right: 25%;
+}
+@media screen and (min-width: 800px) and (max-width: 1400px) {
+    .title-first-row {
+        position: relative;
+        bottom: 40px;
+        right: 16%;
+    }
+}
+
+.dsp-none {
+    display: none;
+}
+
+.kattle-position {
+    position: relative;
+    top: -28px;
+    left: 21%;
+    color: #ffffff;
+}
+
+.div-kettle {
+    position: relative;
+    left: 28px;
+}
+p {
+    color: #ffffff;
+}
+
+.kettle-img {
+    position: relative;
+    height: 40px;
+    bottom: 5px;
+    border-radius: 50%
+}
+
+.kettle-img2 {
+    position: relative;
+    height: 40px;
+    bottom: 5px;
+    border-radius: 50%
+}
+
+
+

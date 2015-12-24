@@ -205,6 +205,8 @@
     <Content Include="Images\DayTime\sunset.jpg" />
     <Content Include="Images\Family\family.jpg" />
     <Content Include="Images\hourhand.png" />
+    <Content Include="Images\Kettle\k1.png" />
+    <Content Include="Images\Kettle\k2.jpg" />
     <Content Include="Images\minhand.png" />
     <Content Include="Images\sechand.png" />
     <Content Include="Scripts\bootstrap.js" />
@@ -219,6 +221,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\kettle.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
